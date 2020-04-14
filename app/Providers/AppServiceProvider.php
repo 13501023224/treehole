@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(UrlGenerator $url)
     {
-        $this->app['request']->server->set('HTTPS', $this->app->environment() != 'local');      //让Laravel支持https，且区分本地
-//        $url->forceScheme('https'); //这里用https，没有的话自己添加下
+//        $this->app['request']->server->set('HTTPS', $this->app->environment() != 'local');      //让Laravel支持https，且区分本地
+        $url->forceScheme('https'); //这里用https，没有的话自己添加下
     }
 }

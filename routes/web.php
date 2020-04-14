@@ -24,7 +24,9 @@ Route::get('/', function () {
     Route::post("like_plus","messages_controller@like_plus")->name("like_plus");
     Route::post("delete_hole_by_id","messages_controller@delete_hole_by_id")->name("delete_hole_by_id");
 
-
+    Route::get("test",function (){
+        return redirect("test");
+    });
 
 
 
