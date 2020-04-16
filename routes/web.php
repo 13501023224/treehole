@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
     Route::post("sign","users_controller@sign")->name("sign");
     Route::post("login","users_controller@login")->name("login");
     Route::post("publish_tree_hole","messages_controller@publish_tree_hole")->name("publish_tree_hole");

@@ -88,7 +88,8 @@ class messages_controller extends Controller
      */
     public function delete_hole_by_id(Request $request){
         $id = $request["id"];
-        $status =  messages::destroy($id);
+        $status =  messages::destroy($id); 
+        
         $result;
         if($status){
             $result = response()->json([

@@ -73,7 +73,7 @@ class users_controller extends Controller
         }else{
             $message=response()->json([
                 "code"=>"4",
-                "message"=>"恭喜你，登录成功！",
+                "message"=>,
                 [
                     "id"=>$userinfos[0]->id,
                     "username"=>$userinfos[0]->username,
